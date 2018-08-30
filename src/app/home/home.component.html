@@ -1,9 +1,18 @@
-<p>You're logged in with Angular 6!!</p>
-<h3>All registered users:</h3>
-<ul>
-    <li *ngFor="let user of users">
-        {{user.username}} ({{user.firstName}} {{user.lastName}})
-        - <a (click)="deleteUser(user.id)" class="text-danger">Delete</a>
-    </li>
-</ul>
-<p><a [routerLink]="['/login']">Logout</a></p>
+<h2 class="display-4">Dashboard</h2>
+<br>
+<mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile [routerLink]="['/users']">
+        <div id="users" class="row">
+             <h5>Users</h5>
+            <div>     
+                <img src="https://www.web2printdownunder.co.nz/images/230/204/user-img.png?h=cdd010b0"
+                width="50%" height="70%"/>
+            </div>
+        </div>    
+    </mat-grid-tile>
+
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+</mat-grid-list>
+

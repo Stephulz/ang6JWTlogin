@@ -8,12 +8,70 @@
     <!-- bootstrap css -->
     <link href="//netdna.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"/>
- 
+
     <style>
         a { cursor: pointer }
     </style>
 </head>
 <body style="background-color: #E9ECEF">
-    <app>Loading...</app>
+    <app>
+        <img src="http://wiki.worldflicks.org/images/loading_icon.gif"
+        style="display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 18%;"
+        />
+    </app>
 </body>
+
+
+<script>
+   function messatsu() {
+        var left = 0;   // Left Arrow
+        var LP = 0;     // A
+        var LK = 0;     // S
+        var HP = 0;     // D
+
+document.addEventListener('keydown', function(event) {
+if(event.keyCode == 37) {
+    //alert('Left was pressed');
+    left = left + 1;
+}
+else if(event.keyCode == 65) {
+    //alert('LP(A) was pressed');
+    LP = LP + 1;
+}
+else if(event.keyCode == 83) {
+    //alert('LK (S) was pressed');
+    LK = LK + 1;
+}
+else if(event.keyCode == 68) {
+    //alert('HP (D) was pressed');
+    HP = HP + 1;
+} else{
+    left = 0;
+    LP = 0;
+    LK = 0; 
+    HP = 0; 
+}
+
+if(left > 1 || HP > 1 || LK > 1 || LP > 2 || HP > 1 || left > 1){
+    left = 0;
+    LP = 0;
+    LK = 0; 
+    HP = 0; 
+}
+
+console.log("A: "+LP+" left:"+left+" S:"+LK+" D:"+HP);
+if(left === 1 && LP === 2 && LK === 1 && HP === 1){
+        alert('messatsu');
+    }   
+  }); 
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  messatsu();
+});
+
+</script>
 </html>

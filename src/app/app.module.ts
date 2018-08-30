@@ -23,13 +23,20 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+
+//Angular Material
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatGridListModule} from '@angular/material/grid-list';
+import { UserComponent } from './user/user.component';
  
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        routing
+        routing,
+        BrowserAnimationsModule,
+        MatGridListModule
     ],
     declarations: [
         AppComponent,
@@ -38,7 +45,8 @@ import { NavbarComponent } from './navbar/navbar.component';
         LoginComponent,
         RegisterComponent,
         FooterComponent,
-        NavbarComponent
+        NavbarComponent,
+        UserComponent
     ],
     providers: [
         AuthGuard,

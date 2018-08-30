@@ -1,0 +1,22 @@
+mat-grid-tile {
+  background: white;
+}
+
+mat-grid-tile:hover {
+  background:whitesmoke;
+}
+
+
+/*Center img*/
+#users{
+  display:table-cell;
+  vertical-align:middle;
+  text-align:center;
+}
+
+#users h5{
+  text-align: center;
+}
+
+
+

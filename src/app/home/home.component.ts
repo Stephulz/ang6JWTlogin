@@ -3,9 +3,13 @@ import { first } from 'rxjs/operators';
  
 import { User } from '../_models/user';
 import { UserService } from '../_services/user.service';
-
  
-@Component({templateUrl: 'home.component.html'})
+@Component({
+    templateUrl: 'home.component.html',
+    selector: 'home.component',
+    styleUrls: ['home.component.css'],
+})
+
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];

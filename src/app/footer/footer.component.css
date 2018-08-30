@@ -1,8 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 #myFooter {
     background-color: #060708f6;
-    color: white;
-    padding-top: 30px;
 }
 
 #myFooter .footer-copyright {
@@ -114,7 +112,13 @@
     #myFooter {
         text-align: center;
     }
+
+    #myFooter .info{
+        text-align: center;
+    }
 }
+
+
 
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
