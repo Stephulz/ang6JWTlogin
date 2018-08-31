@@ -122,7 +122,7 @@
 
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
-
+/*
 html{
     height: 100%;
 }
@@ -145,3 +145,4 @@ body{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
 }
+*/

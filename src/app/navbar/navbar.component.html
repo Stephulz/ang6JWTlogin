@@ -1,20 +1,12 @@
 <!-- Image and text -->
 <nav class="navbar navbar-dark bg-dark">
-  <div class="container">
-  <div>
     <a [routerLink]="['']" class="navbar-brand" href="#">
       <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-icon-logo-png-transparent.png" width="30" height="30" class="d-inline-block align-top" alt="">
       Placeholder
     </a>
-  </div>
-  <div>
-    <div *ngIf="currentUser.firstName != null">
-      <p class="navbar-brand">Logged as: {{currentUser.firstName}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <p *ngIf="currentUser.firstName != null" class="navbar-brand">&nbsp;&nbsp; Logged as: {{currentUser.firstName}} &nbsp;&nbsp;
         <button  [routerLink]="['/login']" onclick="location.reload()" class="btn btn-primary">
           <a>Logout</a> 
         </button>
       </p>
-    </div>
-  </div>
-</div>
 </nav>
