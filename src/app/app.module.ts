@@ -23,11 +23,13 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UserComponent } from './user/user.component';
+
 
 //Angular Material
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { UserComponent } from './user/user.component';
+
  
 @NgModule({
     imports: [
@@ -35,6 +37,8 @@ import { UserComponent } from './user/user.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing,
+
+        //Angular Material
         BrowserAnimationsModule,
         MatGridListModule
     ],
