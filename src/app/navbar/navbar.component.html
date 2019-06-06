@@ -4,8 +4,8 @@
       <img src="https://cdn.freebiesupply.com/logos/large/2x/bootstrap-icon-logo-png-transparent.png" width="30" height="30" class="d-inline-block align-top" alt="">
       Placeholder
     </a>
-      <p *ngIf="currentUser.firstName != null" class="navbar-brand">&nbsp;&nbsp; Logged as: {{currentUser.firstName}} &nbsp;&nbsp;
-        <button  [routerLink]="['/login']" onclick="location.reload()" class="btn btn-primary">
+      <p *ngIf="currentUser?.firstName" class="navbar-brand">&nbsp;&nbsp; Logged as: {{currentUser?.firstName}} &nbsp;&nbsp;
+        <button  [routerLink]="['/login']" (click)="logout()" class="btn btn-primary">
           <a>Logout</a> 
         </button>
       </p>
