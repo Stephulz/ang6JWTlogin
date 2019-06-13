@@ -4,7 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 // used to create fake backend
-//import { fakeBackendProvider } from './_helpers/fake-backend';
+// import { fakeBackendProvider } from './_helpers/fake-backend';
 
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
@@ -26,11 +26,12 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { UserComponent } from './user/user.component';
 
 
-//Angular Material
+// Angular Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
+import {MatButtonModule} from '@angular/material/button';
 
 
 @NgModule({
@@ -40,10 +41,11 @@ import { MyDialogComponent } from './my-dialog/my-dialog.component';
         HttpClientModule,
         routing,
 
-        //Angular Material
+        // Angular Material
         BrowserAnimationsModule,
         MatGridListModule,
         MatDialogModule,
+        MatButtonModule
     ],
     declarations: [
         AppComponent,
@@ -68,7 +70,7 @@ import { MyDialogComponent } from './my-dialog/my-dialog.component';
         { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
         // provider used to create fake backend
-        //fakeBackendProvider
+        // fakeBackendProvider
     ],
     bootstrap: [AppComponent]
 })

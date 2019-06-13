@@ -1,10 +1,10 @@
 <h2 mat-dialog-title> Are you sure? </h2>
 
 <div mat-dialog-content>
-  <p>Would you like to delete the user?</p>
+<p>Delete user</p>
 </div>
 
 <div mat-dialog-actions>
-  <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button (click)="yes()">Yes</button>
+  <button mat-button mat-dialog-close color="warn">No</button>
+  <button mat-raised-button (click)="yes()" color="primary">Yes</button>
 </div>
